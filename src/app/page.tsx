@@ -1,101 +1,93 @@
-import Image from "next/image";
+import { Monitor, Palette, Code, Clock } from "lucide-react";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-purple-50">
+      {/* Hero Section */}
+      <header className="px-4 py-16 text-center">
+        <h1 className="mb-6 text-4xl font-bold text-blue-800">Club Numérique</h1>
+        <p className="mx-auto max-w-2xl text-lg text-gray-700">
+          Le Club numérique, c&rsquo;est un espace convivial où chacune et chacun peut explorer la
+          technologie à son rythme ! Vous avez besoin de mieux comprendre le fonctionnement de votre
+          ordinateur et de ses logiciels ? Vous souhaitez expérimenter une activité créative comme
+          la retouche photo, ou plus technique comme la programmation ? Venez avec vos
+          interrogations, vos envies ou vos projets, notre club est fait pour vous.
+        </p>
+      </header>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      {/* Sections */}
+      <div className="mx-auto max-w-6xl px-4 py-12">
+        <div className="grid gap-8 md:grid-cols-3">
+          {/* Section Bureautique */}
+          <div className="rounded-lg bg-white p-6 shadow-lg transition-shadow hover:shadow-xl">
+            <div className="mb-4 flex justify-center">
+              <Monitor className="h-16 w-16 text-blue-500" />
+            </div>
+            <h2 className="mb-4 text-center text-2xl font-bold text-gray-800">Bureautique</h2>
+            <p className="text-gray-600">
+              Vous avez des difficultés à organiser vos fichiers et dossiers ? Vous souhaitez
+              apprendre à utiliser les logiciels de traitement de texte ou de diaporama ? Vous
+              trouveriez pratique d&rsquo;accéder à vos emails depuis une seule application sur
+              votre ordinateur ou votre téléphone ? Vous n&rsquo;avez pas activé votre espace de
+              stockage sur le Cloud ?
+            </p>
+            <p className="mt-4 text-center font-medium text-gray-700">
+              Passez au Club Numérique, vous verrez, ce n&rsquo;est pas compliqué 😌
+            </p>
+          </div>
+
+          {/* Section Création */}
+          <div className="rounded-lg bg-white p-6 shadow-lg transition-shadow hover:shadow-xl">
+            <div className="mb-4 flex justify-center">
+              <Palette className="h-16 w-16 text-pink-500" />
+            </div>
+            <h2 className="mb-4 text-center text-2xl font-bold text-gray-800">Création</h2>
+            <p className="text-gray-600">
+              Vous souhaitez apprendre à retoucher vos photos ? Vous avez des idées d&rsquo;objets
+              concevoir et imprimer en 3D ? Vous avez besoin de communiquer par la réalisation
+              d&rsquo;affiches, de flyers ou de stickers ?
+            </p>
+            <p className="mt-4 text-center font-medium text-gray-700">
+              Au Club Numérique, découvrez de nouveaux outils et lancez-vous dans vos premiers
+              projets créatifs 🤩
+            </p>
+          </div>
+
+          {/* Section Technique */}
+          <div className="rounded-lg bg-white p-6 shadow-lg transition-shadow hover:shadow-xl">
+            <div className="mb-4 flex justify-center">
+              <Code className="h-16 w-16 text-purple-500" />
+            </div>
+            <h2 className="mb-4 text-center text-2xl font-bold text-gray-800">Technique</h2>
+            <p className="text-gray-600">
+              Vous souhaitez découvrir la programmation ou approfondir vos connaissances en la
+              matière ? Créer votre premier site web, développer une application, manipuler des
+              données ou concevoir un petit jeu vidéo ? Vous aimeriez explorer l&rsquo;informatique
+              embarquée en expérimentant avec des cartes programmables ?
+            </p>
+            <p className="mt-4 text-center font-medium text-gray-700">
+              Venez au Club Numérique et donnez vie à vos projets 👩‍💻👨‍💻
+            </p>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
+
+      {/* Info pratiques */}
+      <div className="mt-12 bg-blue-800 px-4 py-8 text-white">
+        <div className="mx-auto max-w-4xl text-center">
+          <div className="mb-4 flex items-center justify-center">
+            <Clock className="mr-2 h-8 w-8" />
+            <h2 className="text-2xl font-bold">Informations pratiques</h2>
+          </div>
+          <p className="text-lg">
+            Rendez-vous chaque mercredi entre 12h19 et 14h12 en salle C019 !
+            <br />
+            Venez une heure ou deux heures selon votre convenance.
+            <br />
+            Vous êtes autorisés à apporter un déjeuner.
+          </p>
+        </div>
+      </div>
     </div>
   );
 }
