@@ -31,7 +31,7 @@ export default function Home() {
               votre ordinateur ou votre téléphone ? Vous n&rsquo;avez pas activé votre espace de
               stockage sur le Cloud ?
             </p>
-            <p className="mt-4 text-center font-medium text-gray-700">
+            <p className="mt-4 text-center font-bold text-gray-700">
               Passez au Club Numérique, vous verrez, ce n&rsquo;est pas compliqué 😌
             </p>
           </div>
@@ -44,10 +44,10 @@ export default function Home() {
             <h2 className="mb-4 text-center text-2xl font-bold text-gray-800">Création</h2>
             <p className="text-gray-600">
               Vous souhaitez apprendre à retoucher vos photos ? Vous avez des idées d&rsquo;objets
-              concevoir et imprimer en 3D ? Vous avez besoin de communiquer par la réalisation
+              à concevoir et imprimer en 3D ? Vous avez besoin de communiquer par la réalisation
               d&rsquo;affiches, de flyers ou de stickers ?
             </p>
-            <p className="mt-4 text-center font-medium text-gray-700">
+            <p className="mt-4 text-center font-bold text-gray-700">
               Au Club Numérique, découvrez de nouveaux outils et lancez-vous dans vos premiers
               projets créatifs 🤩
             </p>
@@ -65,7 +65,7 @@ export default function Home() {
               données ou concevoir un petit jeu vidéo ? Vous aimeriez explorer l&rsquo;informatique
               embarquée en expérimentant avec des cartes programmables ?
             </p>
-            <p className="mt-4 text-center font-medium text-gray-700">
+            <p className="mt-4 text-center font-bold text-gray-700">
               Venez au Club Numérique et donnez vie à vos projets 👩‍💻👨‍💻
             </p>
           </div>
@@ -80,11 +80,11 @@ export default function Home() {
             <h2 className="text-2xl font-bold">Informations pratiques</h2>
           </div>
           <p className="text-lg">
-            Rendez-vous chaque mercredi entre 12h19 et 14h12 en salle C019 !
+            Rendez-vous chaque mercredi entre 12h15 et 14h15 en salle C019 !
             <br />
             Venez une heure ou deux heures selon votre convenance.
             <br />
-            Vous êtes autorisés à apporter un déjeuner.
+            Vous êtes autorisés à apporter un déjeuner 🍔 !
           </p>
         </div>
       </div>
